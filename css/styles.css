@@ -1,4 +1,29 @@
 :root {
-  display: flex;
   box-sizing: border-box;
+  font-family: "montserrat", sans-serif;
+  color: whitesmoke;
+}
+
+html {
+  background: url("/API-oppgave/images/samuel-berner-kcvEQb7GXZc-unsplash.jpg")
+    fixed center no-repeat;
+  background-position: contain;
+}
+
+nav {
+  max-height: 60px;
+  max-width: 100%;
+  position: sticky;
+  background: url("/API-oppgave/images/mingwei-lim-Xj69EGAgs2s-unsplash.jpg")
+    center no-repeat;
+  background-color: rgba(27, 7, 45, 0.532);
+  display: flex;
+  background-position: cover;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.1rem 1rem 0.1rem 1rem;
+}
+
+.logo {
+  max-height: 50px;
 }
