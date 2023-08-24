@@ -1,11 +1,5 @@
 const apiUrl = "https://ghibliapi.vercel.app/";
 
-// async function getFilms() {
-//   const response = await fetch(`${apiUrl}films`);
-//   const films = await response.json();
-//   console.log(films);
-// }
-
 async function getFilms() {
   try {
     const response = await fetch(`${apiUrl}films`);
@@ -29,10 +23,8 @@ async function displayFilms() {
     filmElement.classList.add("film");
 
     filmElement.innerHTML = `
-    <h2>${film.title}</h2>
-    <p><strong>Director:</strong> ${film.director}</p>
-    <p><strong>Release Year:</strong> ${film.release_date}</p>
-    <p><strong>Description:</strong> ${film.description}</p>
+    <h3 class="title">${film.title}</h3>
+    <p class="info"><strong>Description:</strong> ${film.description}</p>
 `;
 
     mainContainer.appendChild(filmElement);
@@ -40,3 +32,16 @@ async function displayFilms() {
 }
 
 displayFilms();
+
+// async function moreInfo() {
+//   const info = await getFilms();
+//   const button = document.getElementsByClassName("film");
+
+//   info.forEach(() => {
+//     const readMore = document.createElement("div");
+//     readMore.classList.add("mroe");
+
+//     readMore.innerHTML = `
+//     `;
+//   });
+// }
