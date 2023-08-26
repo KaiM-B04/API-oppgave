@@ -1,7 +1,7 @@
 :root {
   box-sizing: border-box;
   font-family: "montserrat", sans-serif;
-  color: whitesmoke;
+  color: rgb(244, 240, 237);
 }
 
 html,
@@ -11,20 +11,61 @@ body {
 }
 
 html {
-  background: rgb(16, 15, 16);
+  background: rgb(21, 10, 10);
+}
+
+body {
+  margin: 15px;
+}
+
+button {
+  font-family: "montserrat", sans-serif;
+  font-weight: bold;
+  font-size: 16px;
+  max-height: 50px;
+  min-width: 5rem;
+  background-color: rgb(230, 223, 218);
+  padding: 10px;
+  border-radius: 20%;
+  border: hidden;
+  cursor: pointer;
+  transition: background-color 0.15s, color 0.15s;
 }
 
 nav {
-  max-height: 60px;
+  max-height: 65px;
   max-width: 100%;
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 0.1rem 1rem;
+  margin: 10px;
 }
 
 .logo {
   max-height: 50px;
+  background-color: rgb(230, 223, 218);
+  padding: 10px;
+  border-radius: 20%;
+}
+
+button:hover {
+  cursor: pointer;
+  background-color: rgb(93, 43, 22);
+  color: rgb(237, 231, 219);
+  border-radius: 20%;
+}
+
+.about:active {
+  background-color: rgba(93, 42, 22, 0.482);
+  color: rgb(230, 223, 218);
+  border-radius: 20%;
+}
+
+header {
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
 }
 
 .main {
@@ -37,7 +78,6 @@ nav {
 
 .film {
   display: inherit;
-  cursor: pointer;
   background: url("/API-oppgave/images/samuel-berner-kcvEQb7GXZc-unsplash.jpg")
     fixed center no-repeat;
   background-position: contain;
@@ -45,6 +85,7 @@ nav {
   min-height: 35rem;
   align-items: center;
   text-align: center;
+  padding: 25px;
 }
 
 .title {
@@ -53,4 +94,29 @@ nav {
 
 .info {
   padding: 0 10px;
+}
+
+.details-button {
+  border-radius: 20px;
+  max-width: 5rem;
+  justify-self: center;
+}
+
+.details-button:hover {
+  cursor: pointer;
+  background-color: rgb(21, 10, 10);
+  color: rgb(237, 231, 219);
+  border-radius: 20px;
+}
+
+.close {
+  border-radius: 20px;
+  width: 5rem;
+}
+
+.close:hover {
+  cursor: pointer;
+  background-color: rgb(21, 10, 10);
+  color: rgb(237, 231, 219);
+  border-radius: 20px;
 }
